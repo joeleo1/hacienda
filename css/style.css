@@ -1,0 +1,268 @@
+/* global */
+
+html,
+body {
+	height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(162, 162, 162);
+	font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #222222;
+	margin: 0;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 60px;
+	margin-bottom: 40px;
+}
+
+h1 span {
+	background: #baff00;
+	padding: 0 10px;
+	color: #222222;
+	display: inline-block;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+h4 {
+	font-size: 15px;
+}
+
+p {
+	font-size: 15px;
+	color: #727272;
+	line-height: 2;
+}
+
+img {
+	max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+/* header ========================================================================== */
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-bars:before {
+    content: "\f0c9";
+}
+
+
+img {
+    max-width: 100%;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.header-area {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+}
+
+.logo-area {
+    float: left;
+    display: inline-block;
+    background: #121212;
+    padding: 20px 60px 30px;
+}
+
+.phone-number {
+    float: right;
+    display: inline-block;
+    padding: 5px 10px;
+    background: #ff5c00;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.nav-switch {
+    display: none;
+}
+
+.nav-menu {
+    display: inline-block;
+    float: right;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu ul li {
+    display: inline;
+}
+
+.nav-menu ul li a {
+    display: inline-block;
+    padding: 40px 10px 5px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-menu ul li a:after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 0;
+    left: 50%;
+    margin-left: 1px;
+    top: 0;
+    background: #ff005c;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.nav-menu ul li a:hover:after {
+    height: 25px;
+}
+
+.nav-menu ul li.active>a:after {
+    height: 25px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .phone-number {
+        margin-right: 30px;
+    }
+
+    .nav-menu ul li a {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .logo-area {
+        padding: 20px 40px 30px;
+    }
+
+    .nav-menu ul li a {
+        margin-right: 5px;
+        font-size: 13px;
+        padding: 37px 7px 5px;
+    }
+
+    .phone-number {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .phone-number {
+        display: none;
+    }
+
+    .nav-switch {
+        position: absolute;
+        right: 20px;
+        font-size: 30px;
+        color: #fff;
+        top: 20px;
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        width: calc(100% - 90px);
+        left: 80px;
+        background: #121212;
+        top: 100%;
+        margin-top: 11px;
+        display: none;
+    }
+
+    .nav-menu ul li a {
+        display: block;
+        padding: 16px 21px;
+        border-bottom: 1px solid #202020;
+        margin-right: 0;
+    }
+
+    .nav-menu ul li a:after {
+        left: 20px;
+    }
+
+    .nav-menu ul li.active>a:after,
+    .nav-menu ul li a:hover:after {
+        height: 10px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .logo-area {
+        padding: 20px 30px 30px;
+    }
+
+    .header-area {
+        background: #121212;
+        padding-right: 66px;
+    }
+
+    .nav-menu {
+        width: 100%;
+        left: 0;
+        margin-top: 0;
+        border-top: 2px solid;
+    }
+}
