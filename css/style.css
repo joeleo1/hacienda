@@ -75,6 +75,58 @@ ol {
 	margin: 0;
 }
 
+/* BUTTONS ===================================================================== */
+.btn {
+    border: none;
+    border-radius: 0;
+}
+
+.btn-primary {
+    font-size: 12px;
+    color: #fff;
+    background-color: #000;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #3b3b3b;
+}
+
+.btn-success {
+    font-size: 12px;
+    color: #fff;
+    background-color: #FF4200;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #a72b00;
+}
+
+/* COLOURS ===================================================================== */
+.bg-primary {
+    color: #fff;
+    background-color: #000;
+}
+
+a.bg-primary:hover,
+a.bg-primary:focus {
+    background-color: #3b3b3b;
+}
+
+.bg-success {
+    background-color: #FF4200;
+}
+
+a.bg-success:hover,
+a.bg-success:focus {
+    background-color: #a72b00;
+}
+
+.shadow {
+	box-shadow: 0px 36px 90px 0px rgba(0,0,0,0.75);
+}
+
 /* header ========================================================================== */
 
 .fa {
@@ -322,9 +374,22 @@ ul {
 	width: 100%;
 }
 
+.hero-content {
+	position: relative;
+	top: 34vh;
+	left: 4rem;
+	width: 60%;
+}
+
+.hero-content, h2, h3, p {
+	color: rgba(255, 255, 255, 0.8);
+	letter-spacing: 4px;
+}
+
 .right-bar {
     position: absolute;
 		right: 0;
+		top: 0;
     width: 100px;
     height: 100%;
     background: #121212;
@@ -389,4 +454,26 @@ ul {
     .hero-right-text {
         display: none;
     }
+}
+
+/* intro section ============================================================ */
+
+#intro-section {
+	padding: 6rem 0;
+}
+
+.intro-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.intro-title span {
+    background: #FC5C20;
+    padding: .4rem;
+    color: #222222;
+    display: inline-block;
+}
+
+.intro-text p {
+    margin-bottom: 50px;
 }
