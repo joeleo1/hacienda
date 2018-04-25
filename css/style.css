@@ -266,3 +266,127 @@ ul {
         border-top: 2px solid;
     }
 }
+
+/* hero =================================================================================== */
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.fa-facebook:before {
+    content: "\f09a";
+}
+
+.fa-pinterest:before {
+    content: "\f0d2";
+}
+
+.fa-linkedin:before {
+    content: "\f0e1";
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+.fa-long-arrow-left:before {
+    content: "\f177";
+}
+
+.fa-long-arrow-right:before {
+    content: "\f178";
+}
+
+#hero-section {
+    height: 100vh;
+    background: #ededed;
+    position: relative;
+		background-image: url(/assets/images/desk1.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+
+.overlay-80 {
+	background-color: rgba(0, 0, 0, 0.8);
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.right-bar {
+    position: absolute;
+		right: 0;
+    width: 100px;
+    height: 100%;
+    background: #121212;
+    z-index: 20;
+}
+
+.right-bar .right-bar-content {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.social-links a {
+    display: block;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 14px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.social-links a:hover {
+    color: #FC5C20;
+}
+
+.hero-right-text {
+    position: absolute;
+    right: 50px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: right center;
+    -ms-transform-origin: right center;
+    transform-origin: right center;
+    bottom: 50%;
+    z-index: 30;
+    color: #fff;
+    text-transform: uppercase;
+		font-size: 12px;
+    letter-spacing: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .hero-right-text {
+        bottom:60%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .right-bar {
+        width: 70px;
+    }
+
+		.right-bar .right-bar-content {
+				top: 55vh;
+		}
+
+    .hero-right-text {
+        display: none;
+    }
+}
